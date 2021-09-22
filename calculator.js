@@ -48,8 +48,8 @@ function calculate(operation){
 	//User wants to add
 	} else if (operation == '+'){
 		readline.question('Enter value: ' , number => {
-			//parseDouble() returns either a number or NaN
-			number = parseDouble(number);
+			//parseFloat() returns either a number or NaN
+			number = parseFloat(number);
 			//check if user entered String that can't be parsed to a number
 			if(isNaN(number)){
 				console.log("\nInvalid entry! Try again\n");
@@ -65,7 +65,7 @@ function calculate(operation){
 	//user wants to subtract
 	} else if (operation == '-'){
                 readline.question('Enter value: ' , number => {
-			number = parseDouble(number);
+			number = parseFloat(number);
 			//check if user entered String that can't be parsed to a number
 			if(isNaN(number)){
 				console.log("\nInvalid entry! Try again\n");
@@ -81,7 +81,7 @@ function calculate(operation){
 	//user wants to multiply
 	} else if (operation == '*'){
 		readline.question('Enter value: ' , number => {
-			number = parseDouble(number);
+			number = parseFloat(number);
 			//check if user entered String that can't be parsed to a number
 			if(isNaN(number)){
 				console.log("\nInvalid entry! Try again\n");
@@ -97,7 +97,7 @@ function calculate(operation){
     //user wants to divide
 	} else if (operation == '/'){
 		readline.question('Enter value: ' , number => {
-			number = parseDouble(number);
+			number = parseFloat(number);
 			//check if user entered String that can't be parsed to a number
 			if(isNaN(number)){
 				console.log("\nInvalid entry! Try again\n");
