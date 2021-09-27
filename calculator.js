@@ -9,10 +9,10 @@ const readline = require('readline').createInterface( {
 	output: process.stdout
 });
 
-/*****************************************************************
+/**
 * Prompts user for operator. If operator is invalid, error message 
 * is printed and user is prompted again for an operator.
-*****************************************************************/
+**/
 function getNumber(){
 	//Print current total
 	console.log(`\nCurrent total: ${total}\n`);
@@ -32,12 +32,12 @@ function getNumber(){
 	});
 }
 
-/*****************************************************************
+/**
 * Takes operator from getNumber() method. Prompts user for number 
 * to operate on. If number is invalid, error message is printed 
 * and user is prompted again for a number.
-* @param operation: operator given from getNumber()
-*****************************************************************/
+* @param operation: char operator given from getNumber()
+**/
 function calculate(operation){
 
 	//Quit the game
